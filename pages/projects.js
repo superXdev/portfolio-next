@@ -3,7 +3,9 @@ import Layout from 'components/layout'
 function Projects() {
     return (
         <Layout title='Projects'>
-            <h1>Projects </h1>
+            <div>
+                <h1 className='text-3xl'>Projects</h1>
+            </div>
         </Layout>
     )
 }
