@@ -1,0 +1,13 @@
+#gtx-trans {
+    display: none;
+}
+
+::-moz-selection {
+    background: #FCD34D;
+    color: white
+}
+
+::selection {
+    color: white;
+    background: #FCD34D;
+}

@@ -1,30 +1,35 @@
-import Link from 'next/link'
+import ActiveLink from './activeLink'
 
-function ListNav() {
+function listNav() {
     return (
-        <ul className='sm:flex sm:flex-row sm:justify-start sm:m-0 sm:h-auto sm:bg-white sm:static sm:space-x-12 sm:space-y-0 sm:text-sm text-base hidden space-y-6 flex bg-white flex-col items-center justify-center fixed  inset-x-0 inset-y-0 animate-fadeInFaster'>
+        <ul className='sm:flex sm:flex-row sm:justify-start sm:m-0 sm:h-auto w-full sm:bg-white sm:static sm:space-x-12 sm:space-y-0 sm:text-sm text-base hidden space-y-6 flex bg-white flex-col items-center justify-center fixed  inset-x-0 inset-y-0 animate-fadeInFaster'>
             <li>
-                <Link href="/">
-                    <a className='text-gray-600 hover:text-gray-900'>Homepage</a>
-                </Link>
+                <ActiveLink href='/'>
+                    Home
+                </ActiveLink>
             </li>
             <li>
-                <Link href="/projects">
-                    <a className='text-gray-600 hover:text-gray-900'>Projects</a>
-                </Link>
+                <ActiveLink href='/projects'>
+                    Projects
+                </ActiveLink>
             </li>
             <li>
-                <Link href="/skills">
-                    <a className='text-gray-600 hover:text-gray-900'>Skills</a>
-                </Link>
+                <ActiveLink href='/skills'>
+                    Skills
+                </ActiveLink>
             </li>
             <li>
-                <Link href="/about">
-                    <a className='text-gray-600 hover:text-gray-900'>About</a>
-                </Link>
+                <ActiveLink href='/about'>
+                    About
+                </ActiveLink>
+            </li>
+            <li className='sm:absolute xl:right-0 bg-purple-500 p-2 rounded right-20 hover:bg-purple-800'>
+                <ActiveLink cv href='/CV_Nazir Bahrul Ulum.pdf' target='blank'>
+                    Download CV
+                </ActiveLink>
             </li>
         </ul>
     )
 }
 
-export default ListNav
+export default listNav
