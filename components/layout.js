@@ -52,7 +52,7 @@ function Layout({ children, title, homepage = false, h3RefHome }) {
                 </nav>
 
                 {
-                    homepage ? <div className='h-screen flex items-center xl:px-0 sm:px-20 px-7 cursor-default'>{children}</div> : <div className='pt-28 xl:px-0 sm:px-20 px-7 cursor-default'>{children}</div>
+                    homepage ? <div className='h-screen flex items-center xl:px-0 sm:px-20 px-7 cursor-default'>{children}</div> : <div className='h-screen pt-28 xl:px-0 sm:px-20 px-7 cursor-default'>{children}</div>
                 }
 
                 <footer className='font-light absolute bottom-0 left-0 right-0 flex flex-col sm:items-end p-6 cursor-default sm:text-base items-center text-xs'>
