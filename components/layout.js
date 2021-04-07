@@ -47,18 +47,18 @@ function Layout({ children, title, homepage = false, h3RefHome }) {
             <div ref={circleRef} className='hidden md:block w-8 h-8 rounded-full border-2 border-yellow-400 fixed -left-10 transition-all duration-500 ease-out'></div>
             <div className='container mx-auto max-w-screen-xl relative' onMouseMove={animationMouse} onClick={animationClickCircle} onTouchStart={startTouchAnimation}>
                 <nav className='flex flex-row justify-end sm:justify-start absolute inset-x-0 h-20 xl:px-0 sm:px-20 px-7 items-center subpixel-antialiased font-medium text-sm '>
-                    <List />
+                    <List/>
                     <Hamburger h3RefHome={h3RefHome} />
                 </nav>
 
                 {
-                    homepage ? <div className='h-screen flex items-center xl:px-0 sm:px-20 px-7 cursor-default'>{children}</div> : <div className='h-screen pt-28 xl:px-0 sm:px-20 px-7 cursor-default'>{children}</div>
+                    homepage ? <div className='h-screen flex items-center xl:px-0 sm:px-20 px-7 cursor-default'>{children}</div> : <div className='pt-28 xl:px-0 sm:px-20 px-7 cursor-default'>{children}</div>
                 }
 
-                <footer className='font-light absolute bottom-0 left-0 right-0 flex flex-col sm:items-end p-6 cursor-default sm:text-base items-center text-xs'>
+                {/* <footer className='font-light absolute bottom-0 left-0 right-0 flex flex-col sm:items-end xl:px-0 sm:px-20 px-7 pb-3 cursor-default sm:text-base items-center text-xs'>
                     <div className='flex items-center'>Built with Next Js and Tailwind <span className='ml-3 block bg-love-img w-4 h-4 bg-cover'></span> </div>
                     <div> <a href="https://github.com/devnazir" target='blank'>Nazir Bahrul Ulum</a> &copy; {years}</div>
-                </footer>
+                </footer> */}
             </div>
         </>
     )
