@@ -24,7 +24,7 @@ function listNav() {
                 </ActiveLink>
             </li>
             <li className='sm:absolute xl:right-0 bg-purple-500 p-2 rounded right-20 hover:bg-purple-800'>
-                <ActiveLink cv href='/CV_Nazir Bahrul Ulum.pdf' target='blank'>
+                <ActiveLink cv href='/cv/CV_Nazir Bahrul Ulum.pdf' target='blank'>
                     Download CV
                 </ActiveLink>
             </li>

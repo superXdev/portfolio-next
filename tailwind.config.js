@@ -41,10 +41,20 @@ module.exports = {
         shake: 'shake .5s ease-in-out',
       },
       backgroundImage: theme => ({
-        'call-img': "url('/call.png')",
-        'wave-img': "url('/wave.png')",
-        'love-img': "url('/love.png')",
-      })
+        'call-icon': "url('/icon/call.png')",
+        'wave-icon': "url('/icon/wave.png')",
+        'love-icon': "url('/icon/love.png')",
+        'html-icon': "url('/icon/html.png')",
+        'css-icon': "url('/icon/css.png')",
+        'js-icon': "url('/icon/js.png')",
+        'json-icon': "url('/icon/json.png')",
+        'react-icon': "url('/icon/react.png')",
+        'nodejs-icon': "url('/icon/nodejs.png')",
+        'webpack-icon': "url('/icon/webpack.png')",
+      }),
+      gridTemplateColumns: {
+       'project': 'repeat(auto-fit, minmax(300px, 1fr))',
+      }
     },
   },
   variants: {
