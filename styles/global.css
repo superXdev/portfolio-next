@@ -11,3 +11,12 @@
     color: white;
     background: #FCD34D;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FCD34D;
+    border-radius: 5px;
+}
