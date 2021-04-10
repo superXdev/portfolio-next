@@ -32,21 +32,27 @@ module.exports = {
           '50%': { transform: 'rotate(-20deg)' },
           '75%': { transform: 'rotate(20deg)' },
           '100%': { transform: 'rotate(0deg)' }
-        }
+        },
+        topToBottom: {
+          '0%': { top: '-3rem' },
+          '100%': { top: '-2.5rem' }
+        },
       },
       animation: {
         leftToRight: 'leftToRight .5s ease-in-out',
         fadeIn: 'fadeIn .5s ease-in-out',
         fadeInFaster: 'fadeIn .2s ease-in-out',
         shake: 'shake .5s ease-in-out',
+        topToBottom: 'topToBottom .5s ease-in-out infinite'
       },
       backgroundImage: theme => ({
         'call-icon': "url('/icons/call.png')",
         'wave-icon': "url('/icons/wave.png')",
         'love-icon': "url('/icons/love.png')",
+        'arrow-icon': "url('/icons/arrow.png')",
       }),
       gridTemplateColumns: {
-       'project': 'repeat(auto-fit, minmax(300px, 1fr))',
+        'project': 'repeat(auto-fit, minmax(300px, 1fr))',
       }
     },
   },

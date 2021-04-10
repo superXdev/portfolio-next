@@ -1,15 +1,20 @@
+:root {
+    --yellow: '#FCD34D';
+    --white: '#FFF'
+}
+
 #gtx-trans {
     display: none;
 }
 
 ::-moz-selection {
-    background: #FCD34D;
-    color: white
+    background: var(--yellow);
+    color: var(--white);
 }
 
 ::selection {
-    color: white;
-    background: #FCD34D;
+    color: var(--white);
+    background: var(--yellow);
 }
 
 ::-webkit-scrollbar {
@@ -17,6 +22,6 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #FCD34D;
+    background: var(--yellow);
     border-radius: 5px;
 }
