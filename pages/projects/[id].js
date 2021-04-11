@@ -9,12 +9,24 @@ function Project() {
     const [button, setButton] = useState(false)
 
     useEffect(() => {
+        const abortController = new AbortController()
+        const signal = abortController.signal
+
         async function fetchProjectById() {
-            const projectById = await (await fetch(`../api/projects/${query.id}`)).json()
-            setProjects(projectById)
+            try {
+                const projectById = await (await fetch(`../api/projects/${query.id}`, { signal: signal })).json()
+                setProjects(projectById)
+            } catch(error) {
+                console.log(error)
+            } 
         }
 
         fetchProjectById()
+
+        return () => {
+            abortController.abort()
+        }
+
     }, [query.id])
 
     const showButton = () => {
@@ -30,10 +42,10 @@ function Project() {
             <h1 className='text-2xl'>{projects[0]?.name}</h1>
             <div className='relative'>
                 <img className='bg-cover mt-4 cursor-pointer' src={projects[0]?.linkImage} alt={projects[0]?.name} onClick={showButton} />
-                <div className={`flex text-white transition duration-500 text-sm items-center justify-center absolute inset-0 ${button ? 'z-1 bg-black bg-opacity-50' : '-z-1'}`} onClick={hiddenButton}>
-                    <button className='bg-blue-500 p-2 rounded hover:bg-blue-700'><a className='' href='#'>Source Code</a></button>
-                    <button className='bg-green-500 p-2 ml-3 rounded hover:bg-green-700'><a className='' href='#'>Visit Website</a></button>
-                    <button className='bg-yellow-500 p-2 ml-3 rounded hover:bg-yellow-700'><a className='' href='#'>Show demo here</a></button>
+                <div className={`flex sm:flex-row flex-col text-white transition duration-500 text-sm items-center justify-center absolute inset-0 ${button ? 'z-1 bg-black bg-opacity-50' : '-z-1'}`} onClick={hiddenButton}>
+                    <button className={`${button ? 'block' : 'hidden'} bg-blue-500 p-2 rounded hover:bg-blue-700`}><a className='' href='#'>Source Code</a></button>
+                    <button className={`${button ? 'block' : 'hidden'} bg-green-500 p-2 sm:ml-3 sm:mt-0 mt-3 rounded hover:bg-green-700`}><a className='' href='#'>Visit Website</a></button>
+                    <button className={`${button ? 'block' : 'hidden'} bg-yellow-500 p-2 sm:ml-3 sm:mt-0 mt-3 rounded hover:bg-yellow-700`}><a className='' href='#'>Show demo here</a></button>
                 </div>
             </div>
 

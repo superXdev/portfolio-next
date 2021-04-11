@@ -4,12 +4,24 @@ import ActiveLink from 'components/nav/activeLink'
 
 function Projects() {
     const [projects, setProjects] = useState([])
+
     useEffect(() => {
+        const abortController = new AbortController()
+        const signal = abortController.signal
+
         async function fetchProjects() {
-            const myProjects = await (await fetch('/api/projects')).json()
-            setProjects(myProjects)
+            try {
+                const myProjects = await (await fetch('/api/projects', { signal: signal })).json()
+                setProjects(myProjects)
+            } catch(error) {
+                console.log(error)
+            }
         }
         fetchProjects()
+
+        return () => {
+            abortController.abort()
+        }
     }, [])
 
     return (
@@ -34,7 +46,6 @@ function Projects() {
 const Card = memo(CardProject)
 
 function CardProject({ projects }) {
-    console.log(projects)
     return (
         projects.map(project => {
             return (

@@ -1,6 +1,6 @@
 :root {
-    --yellow: '#FCD34D';
-    --white: '#FFF'
+    --yellow: #FCD34D;
+    --white: #FFF;
 }
 
 #gtx-trans {
@@ -13,8 +13,8 @@
 }
 
 ::selection {
-    color: var(--white);
     background: var(--yellow);
+    color: var(--white);
 }
 
 ::-webkit-scrollbar {

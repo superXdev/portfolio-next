@@ -36,6 +36,8 @@ function CircleAnimation({ containerRef }) {
                 }, 100)
             }
         }
+
+        return () => containerRef = null;
     }, [containerRef.current])
 
     return (

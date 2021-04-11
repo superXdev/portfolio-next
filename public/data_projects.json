@@ -16,7 +16,7 @@
     "id": 2,
     "name": "NMOV",
     "description": "NMOV is a Website for watch movies and movies trailer. I have got the videos link from the scrapping results of the Filmapik website. after I got videos data like a link, description, title, and more. i made API for displays data in my website",
-    "linkImage": "/images/Youtube-Downloader.png",
+    "linkImage": "/images/NMOV.png",
     "stack": [
       "/icons/html.png",
       "/icons/sass.png",
@@ -50,29 +50,29 @@
   {
     "id": 5,
     "name": "Sage",
-    "description": "Sage is a Landing Page Online Course Website, made use HTMl and CSS",
+    "description": "Sage is a Landing Page Online Course Website, made use HTMl and SASS",
     "linkImage": "/images/Sage.png",
     "stack": [
       "/icons/html.png",
-      "/icons/css.png",
+      "/icons/sass.png",
       "/icons/js.png"
     ]
   },
   {
     "id": 6,
     "name": "Mainan",
-    "description": "Mainan is a Landing Page Online Course Website, made use HTMl and CSS",
+    "description": "Mainan is a Landing Page Online Course Website, made use HTMl and SASS",
     "linkImage": "/images/Mainan.png",
     "stack": [
       "/icons/html.png",
-      "/icons/css.png"
+      "/icons/sass.png"
     ]
   },
   {
     "id": 7,
     "name": "API LK21",
     "description": "This API built with Express Js for get information about movies like title, description, thumbnail, and more.",
-    "linkImage": "/images/Mainan.png",
+    "linkImage": "/images/API-LK.png",
     "stack": [
       "/icons/js.png",
       "/icons/json.png",
@@ -83,7 +83,7 @@
     "id": 8,
     "name": "API FILMAPIK",
     "description": "This API built with Express Js for get information about movies like title, description, thumbnail, Video Link and more.",
-    "linkImage": "/images/Mainan.png",
+    "linkImage": "/images/API-FA.png",
     "stack": [
       "/icons/js.png",
       "/icons/json.png",
