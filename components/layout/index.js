@@ -24,7 +24,7 @@ function Layout({ children, title, homepage = false, h3RefHome }) {
           : setPositionNav("absolute");
       };
     }
-  }, [containerRef]);
+  });
 
   return (
     <Fragment>
@@ -35,7 +35,9 @@ function Layout({ children, title, homepage = false, h3RefHome }) {
       <Container homepage={homepage} containerRef={containerRef}>
         <Nav h3RefHome={h3RefHome} position={positionNav} />
         <Body homepage={homepage}>{children}</Body>
-        <Footer githubLink="https://github.com/devnazir">Nazir Bahrul Ulum</Footer>
+        <Footer githubLink="https://github.com/devnazir">
+          Nazir Bahrul Ulum
+        </Footer>
       </Container>
     </Fragment>
   );
