@@ -6,7 +6,7 @@ function ActiveLink({ children, href, cv = false, target }) {
     const [textColor, setTextColor] = useState('text-gray-500')
 
     useEffect(() => {
-        router.asPath === href || (router.query.id && href === '/projects') ? setTextColor('text-purple-500') : setTextColor('text-gray-500')
+        router.asPath === href ? setTextColor('text-purple-500') : setTextColor('text-gray-500')
     }, [])
 
     const clickedLink = e => {
