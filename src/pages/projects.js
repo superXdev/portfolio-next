@@ -24,7 +24,7 @@ function Projects() {
           imageName="nmov"
           imageType="png"
           stack={["js", "sass", "webpack"]}
-          githubLink="https://github.com/devnazir/nmov"
+          githubLink="https://github.com/devnazir/nmovv"
         />
         <Card
           projectName="API LK21"
