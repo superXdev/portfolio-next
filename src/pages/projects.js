@@ -113,7 +113,6 @@ function Card({ projectName, imageName, imageType, stack, githubLink }) {
         <img
           src={`/images/${imageName}.${imageType}`}
           alt={projectName}
-          lazy="true"
         />
       </div>
 
