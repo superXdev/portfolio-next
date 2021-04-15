@@ -125,6 +125,7 @@ function Card({ projectName, imageName, imageType, stack, githubLink }) {
                 key={id}
                 src={`/icons/${stack}.png`}
                 className="w-5 h-5 bg-cover mr-1"
+                alt={stack}
               />
             );
           })}

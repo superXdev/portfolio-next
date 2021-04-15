@@ -20,6 +20,7 @@ class MyDocument extends Document {
             href="/icons/favicon.ico"
             type="image/x-icon"
           />
+          <meta name="description" content="I'am Nazir Bahrul Ulum 19 years old, a Front-end Web Developer."/>
         </Head>
         <body>
           <Main />
