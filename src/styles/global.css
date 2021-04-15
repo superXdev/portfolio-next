@@ -1,0 +1,27 @@
+:root {
+    --yellow: #FCD34D;
+    --white: #FFF;
+}
+
+#gtx-trans {
+    display: none;
+}
+
+::-moz-selection {
+    background: var(--yellow);
+    color: var(--white);
+}
+
+::selection {
+    background: var(--yellow);
+    color: var(--white);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+    border-radius: 5px;
+}
