@@ -9,7 +9,7 @@ import CircleAnimation from "../../utils/circle_animation";
 import Footer from "../footer";
 import Nav from "../nav";
 import { useRef, Fragment, useState, useEffect } from "react";
-import { Body, Container } from "components/content";
+import { Body, Container } from "../content";
 
 function Layout({ children, title, homepage = false, h3RefHome }) {
   const containerRef = useRef();
