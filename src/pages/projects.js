@@ -73,7 +73,7 @@ function ContainerProject({ children }) {
         <div>
           <h1 className="text-3xl">Projects</h1>
           <span className="block text-sm">
-            Click project to see project detail
+            Click project to see source code in github
           </span>
         </div>
         <button className="cursor-pointer">
