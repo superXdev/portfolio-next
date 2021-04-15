@@ -7,7 +7,7 @@ This website very simple and fast. if you understand react/next js this repo eas
 #### Performance
 GTMetrix                              |  LightHouse 
 --------------------------------------|------------------------------------------
-![GTMetrix](/public/demo/gmetrix.png) | ![LightHouse](/public/demo/lighthouse.png)
+![GTMetrix](/public/demo/gmetrix.png) | ![LightHouse](/public/demo/lighthouse.PNG)
 
 #### Color Pallete
   Color |  Hex 
