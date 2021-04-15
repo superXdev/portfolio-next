@@ -10,56 +10,56 @@ function Projects() {
           imageName="yt-downloader"
           imageType="png"
           stack={["js", "sass", "nodejs"]}
-          githubLink="https://github.com"
+          githubLink="https://github.com/devnazir/yt-downloader"
         />
         <Card
           projectName="Movie Trailer"
           imageName="mov-trailer"
           imageType="png"
           stack={["js", "sass", "webpack"]}
-          githubLink=""
+          githubLink="https://github.com/devnazir/movietrailer"
         />
         <Card
           projectName="Nmovie"
           imageName="nmov"
           imageType="png"
           stack={["js", "sass", "webpack"]}
-          githubLink=""
+          githubLink="https://github.com/devnazir/nmov"
         />
         <Card
           projectName="API LK21"
           imageName="api-lk21"
           imageType="png"
           stack={["js", "json", "nodejs"]}
-          githubLink=""
+          githubLink="https://github.com/devnazir/api-lk21"
         />
         <Card
           projectName="API FILMAPIK"
           imageName="api-filmapik"
           imageType="png"
           stack={["js", "json", "nodejs"]}
-          githubLink=""
+          githubLink="https://github.com/devnazir/api-filmapik"
         />
         <Card
           projectName="Kelas io"
           imageName="kelas-io"
           imageType="png"
           stack={["css", "js"]}
-          githubLink=""
+          githubLink="https://github.com/devnazir/kelas-io"
         />
         <Card
           projectName="Sage"
           imageName="sage"
           imageType="png"
           stack={["sass", "js"]}
-          githubLink=""
+          githubLink="https://github.com/devnazir/sage"
         />
         <Card
           projectName="Mainan"
           imageName="mainan"
           imageType="png"
           stack={["sass", "js"]}
-          githubLink=""
+          githubLink="https://github.com/devnazir/mainan"
         />
       </ContainerProject>
     </Layout>
