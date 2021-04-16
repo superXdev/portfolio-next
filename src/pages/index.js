@@ -5,7 +5,7 @@ function Home() {
   const h3Ref = useRef();
 
   return (
-    <Layout homepage title="Nazir Bahrul Ulum" h3RefHome={h3Ref}>
+    <Layout homepage title="Fikri Rudiansyah" h3RefHome={h3Ref}>
       <div>
         <h1 className="sm:text-5xl text-3xl font-thin transition duration-700 animate-leftToRight flex items-center">
           Hello{" "}
