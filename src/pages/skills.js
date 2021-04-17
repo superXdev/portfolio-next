@@ -4,49 +4,55 @@ function Skills() {
   return (
     <Layout title="Skills">
       <SkillCards>
-        <Card skill="CSS" experience="1 year" imageName="css" imageType="png" />
+        <Card skill="CSS" experience="1 years" imageName="css" imageType="png" />
         <Card
           skill="JavaScript"
-          experience="1 Year"
+          experience="6 Months"
           imageName="js"
           imageType="png"
         />
         <Card
-          skill="SASS"
-          experience="6 Months"
-          imageName="sass"
+          skill="C#"
+          experience="3 years"
+          imageName="cs"
           imageType="png"
         />
         <Card
-          skill="Node JS"
-          experience="6 Months"
-          imageName="nodejs"
-          imageType="svg"
-        />
-        <Card
-          skill="React Js"
-          experience="2 Months"
-          imageName="react"
+          skill="Laravel"
+          experience="8 Months"
+          imageName="laravel"
           imageType="png"
         />
         <Card
-          skill="Next Js"
-          experience="1 Months"
-          imageName="next"
-          imageType="svg"
+          skill="Python"
+          experience="4 Months"
+          imageName="py"
+          imageType="png"
         />
         <Card
-          skill="Tailwind"
-          experience="1 Months"
-          imageName="tailwind"
+          skill="Bootstrap"
+          experience="1 years"
+          imageName="bootstrap"
+          imageType="png"
+        />
+        <Card
+          skill="Jquery"
+          experience="1 years"
+          imageName="jq"
+          imageType="png"
+        />
+        <Card
+          skill="PHP"
+          experience="1 years"
+          imageName="php"
           imageType="svg"
         />
       </SkillCards>
       <Learning>
         <Card
-          skill="TypeScript"
-          imageName="ts"
-          imageType="svg"
+          skill="Vuejs"
+          imageName="vue"
+          imageType="png"
           learning={true}
         />
       </Learning>

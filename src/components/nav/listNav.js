@@ -23,8 +23,8 @@ function listNav() {
                     About
                 </ActiveLink>
             </li>
-            <li className='sm:absolute xl:right-0 bg-purple-500 p-2 rounded right-20 hover:bg-purple-800'>
-                <ActiveLink cv href='/cv/CV_Nazir Bahrul Ulum.pdf' target='blank'>
+            <li className='sm:absolute xl:right-0 bg-green-500 p-2 rounded right-20 hover:bg-green-800'>
+                <ActiveLink cv href='#' target='blank'>
                     Download CV
                 </ActiveLink>
             </li>

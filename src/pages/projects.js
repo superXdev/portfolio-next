@@ -6,60 +6,53 @@ function Projects() {
     <Layout title="Projects">
       <ContainerProject>
         <Card
-          projectName="Youtube Downloader"
-          imageName="yt-downloader"
+          projectName="OpenNews API (News Aggregator)"
+          imageName="opennews"
           imageType="png"
-          stack={["js", "sass", "nodejs"]}
+          stack={["react", "json", "bootstrap", "laravel", "py"]}
+          githubLink="https://opennewsapi.herokuapp.com/"
+        />
+        <Card
+          projectName="Enam - Encrypted Password Manager"
+          imageName="enam"
+          imageType="png"
+          stack={["laravel", "js", "css"]}
+          githubLink="https://github.com/superXdev/enam"
+        />
+        <Card
+          projectName="Pastelink"
+          imageName="pastelink"
+          imageType="png"
+          stack={["js", "bootstrap", "laravel"]}
           githubLink="https://github.com/devnazir/yt-downloader"
         />
         <Card
-          projectName="Movie Trailer"
-          imageName="mov-trailer"
+          projectName="CNotepad - Cryptographic Notepad"
+          imageName="cnotepad"
           imageType="png"
-          stack={["js", "sass", "webpack"]}
-          githubLink="https://github.com/devnazir/movietrailer"
+          stack={["cs"]}
+          githubLink="https://github.com/superXdev/cnotepad"
         />
         <Card
-          projectName="Nmovie"
-          imageName="nmov"
+          projectName="CraigList Scraper"
+          imageName="craig"
           imageType="png"
-          stack={["js", "sass", "webpack"]}
-          githubLink="https://github.com/devnazir/nmov"
+          stack={["js", "css", "django"]}
+          githubLink="https://github.com/superXdev/codelist"
         />
         <Card
-          projectName="API LK21"
-          imageName="api-lk21"
+          projectName="Game kertas batu gunting"
+          imageName="game"
           imageType="png"
-          stack={["js", "json", "nodejs"]}
-          githubLink="https://github.com/devnazir/api-lk21"
+          stack={["cs"]}
+          githubLink="https://github.com/superXdev/Game-batu-gunting-kertas"
         />
         <Card
-          projectName="API FILMAPIK"
-          imageName="api-filmapik"
+          projectName="To-Do-App"
+          imageName="todo-app"
           imageType="png"
-          stack={["js", "json", "nodejs"]}
-          githubLink="https://github.com/devnazir/api-filmapik"
-        />
-        <Card
-          projectName="Kelas io"
-          imageName="kelas-io"
-          imageType="png"
-          stack={["css", "js"]}
-          githubLink="https://github.com/devnazir/kelas-io"
-        />
-        <Card
-          projectName="Sage"
-          imageName="sage"
-          imageType="png"
-          stack={["sass", "js"]}
-          githubLink="https://github.com/devnazir/sage"
-        />
-        <Card
-          projectName="Mainan"
-          imageName="mainan"
-          imageType="png"
-          stack={["sass", "js"]}
-          githubLink="https://github.com/devnazir/mainan"
+          stack={["js", "bootstrap", "django"]}
+          githubLink="https://github.com/superXdev/To-Do-App"
         />
       </ContainerProject>
     </Layout>
@@ -73,13 +66,13 @@ function ContainerProject({ children }) {
         <div>
           <h1 className="text-3xl">Projects</h1>
           <span className="block text-sm">
-            Click project to see source code in github
+            Click project to see
           </span>
         </div>
         <button className="cursor-pointer">
           <a
             className=""
-            href="https://github.com/devnazir?tab=repositories"
+            href="https://github.com/superXdev"
             target="blank"
           >
             More projects...
@@ -116,9 +109,9 @@ function Card({ projectName, imageName, imageType, stack, githubLink }) {
         />
       </div>
 
-      <div className="w-full h-full bg-purple-400 p-2 text-white">
+      <div className="w-full h-full bg-green-400 p-2 text-white">
         <h2 className="text-xl cursor-pointer">{projectName}</h2>
-        <div className="flex absolute right-0 top-0 bg-green-500 rounded p-2">
+        <div className="flex absolute right-0 top-0 bg-gray-600 p-2">
           {stack.map((stack, id) => {
             return (
               <img

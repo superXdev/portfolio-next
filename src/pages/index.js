@@ -12,18 +12,18 @@ function Home() {
           <span className="bg-wave-icon block w-8 h-8 bg-cover ml-3 hover:animate-shake"></span>
         </h1>
         <h2 className="text-lg sm:text-2xl font-light w-full leading-snug my-10 lg:w-6/12 md:text-4xl md:leading-normal animate-fadeIn">
-          I'm <span className="font-normal">Nazir Bahrul Ulum</span>, a
-          front-end web developer focused on building beautiful websites and
-          awesome
+          I'm <span className="font-normal">Fikri Rudiansyah</span>, a
+          web developer focused on building useful websites and
+          application
         </h2>
         <h3 className="font-base flex items-center relative" ref={h3Ref}>
           Get in touch{" "}
           <span className="bg-call-icon block w-8 h-8 bg-cover mx-3 hover:animate-shake animate-shake"></span>{" "}
           <a
-            className="sm:static absolute -bottom-7 rounded bg-purple-500 hover:bg-purple-800 transition duration-400 text-white pl-3 pr-3"
-            href="mailto:nazirbachrululum@gmail.com"
+            className="sm:static absolute -bottom-7 rounded bg-green-500 hover:bg-green-800 transition duration-400 text-white pl-3 pr-3"
+            href="mailto:fikrizhanking@gmail.com"
           >
-            nazirbachrululum@gmail.com
+            fikrizhanking@gmail.com
           </a>
         </h3>
       </div>
