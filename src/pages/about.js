@@ -8,7 +8,7 @@ function About() {
         <p className="mb-3">
           I'm Fikri Rudiansyah, 20 years old. currently learning English,
           Vuejs and looking a job as Web Developer. I haven't
-          experience as a Programmer in company or start-up, but i experienced
+          experience as a Programmer in company or start-up, but i experienced in Freelance for a years and i
           use a few programming language include that Framework. I always
           learned from mistakes and eager to learn something new (Like Framework
           or Programming language).
