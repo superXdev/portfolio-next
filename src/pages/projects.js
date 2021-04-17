@@ -43,7 +43,7 @@ function Projects() {
         <Card
           projectName="Game kertas batu gunting"
           imageName="game"
-          imageType="png"
+          imageType="PNG"
           stack={["cs"]}
           githubLink="https://github.com/superXdev/Game-batu-gunting-kertas"
         />
