@@ -7,19 +7,19 @@ function Skills() {
         <Card skill="CSS" experience="1 years" imageName="css" imageType="png" />
         <Card
           skill="JavaScript"
-          experience="6 Months"
+          experience="1 years"
           imageName="js"
           imageType="png"
         />
         <Card
           skill="C#"
-          experience="3 years"
+          experience="4 years"
           imageName="cs"
           imageType="png"
         />
         <Card
           skill="Laravel"
-          experience="8 Months"
+          experience="1 years"
           imageName="laravel"
           imageType="png"
         />
@@ -31,27 +31,27 @@ function Skills() {
         />
         <Card
           skill="Bootstrap"
-          experience="1 years"
+          experience="2 years"
           imageName="bootstrap"
           imageType="png"
         />
         <Card
           skill="Jquery"
-          experience="1 years"
+          experience="2 years"
           imageName="jq"
           imageType="png"
         />
         <Card
           skill="PHP"
-          experience="1 years"
+          experience="2 years"
           imageName="php"
           imageType="svg"
         />
       </SkillCards>
       <Learning>
         <Card
-          skill="Vuejs"
-          imageName="vue"
+          skill="Reactjs"
+          imageName="react"
           imageType="png"
           learning={true}
         />
