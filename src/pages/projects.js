@@ -6,6 +6,13 @@ function Projects() {
     <Layout title="Projects">
       <ContainerProject>
         <Card
+          projectName="Sistem inventaris barang"
+          imageName="inventaris"
+          imageType="png"
+          stack={["js", "bootstrap", "laravel"]}
+          githubLink="https://github.com/superXdev/Sistem-Inventaris-Barang"
+        />
+        <Card
           projectName="OpenNews API (News Aggregator)"
           imageName="opennews"
           imageType="png"
